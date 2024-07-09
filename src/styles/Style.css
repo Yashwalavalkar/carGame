@@ -1,0 +1,64 @@
+body{
+    background-image: url('https://media.istockphoto.com/photos/suburb-asphalt-road-and-green-field-picture-id612654188?k=20&m=612654188&s=612x612&w=0&h=gDzHAmHQ9wZ0a-MKF1-qNbHphZLxp2Ep8P-cPQX3uGc=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+.car{
+    background-image: url('https://th.bing.com/th/id/R.be27364f544b75724742096c80ce1a19?rik=xknPmZuwDdXusA&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcar-image-transparent-background%2fcar-image-transparent-background-12.png&ehk=%2boTaONnqbE8sQGPC65HwCD8xKB7idGXvL54LcsE5%2fYA%3d&risl=&pid=ImgRaw&r=0');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 69px;
+    width: 200px;
+    position:absolute;
+    left:5vw;
+    bottom: 0;
+    
+
+}
+
+.obstacle{
+    background-color: black;
+    height: 40px;
+    width: 150px;
+    position:absolute;
+    bottom:0;
+    left:40vw;
+}
+
+
+.animateCar{
+    animation: car 0.6s linear;
+}
+
+.obstacleAni{
+    animation: obstacleAni 1.4s linear infinite;
+}
+
+@keyframes car{
+    0%{
+        bottom:0;
+    }
+    50%{
+       bottom: 300px; 
+    }
+    100%{
+      bottom: 0;  
+    }
+    
+}
+
+@keyframes obstacleAni{
+    0%{
+        left:100vw;
+    }
+    100%{
+        left:-10vw;
+    }
+}
+
