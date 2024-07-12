@@ -1,0 +1,28 @@
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 15px 1px rgb(0, 255, 217);
+}
+.hover:hover{
+    text-shadow: 1px 1px 1px rgb(219, 171, 255);
+    cursor: pointer;
+    background: linear-gradient(to right, #f00, #00f); /* Define your gradient or background color here */
+    background-size: 200% 100%; /* Stretch the background to cover the entire element */
+    animation: backgroundShift 2s linear infinite;
+    padding: 5px;
+    text-decoration: none;
+}
+
+@keyframes backgroundShift {
+    0% {
+      background-position: 0% 0%;
+      font-size: large;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
+
+  .hover{
+    font-size: 25px;
+  }

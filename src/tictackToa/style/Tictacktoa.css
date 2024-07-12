@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+}
+
+.title{
+    color: cyan;
+    font-size:25px;
+    font-weight: bold;
+
+}
+.title span{
+    color:white;
+}
+.reset{
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    background: #1f3510;
+    font-size: 15px;
+    font-weight: bold;
+    color: #26ffcb;
+}
+
+.boxes{
+    display: flex;
+    height: 110px;
+    width: 110px;
+    cursor: pointer;
+    background-color: #122b2b;
+    margin: 3px;
+}
+
+.board{
+    height: 460px;
+    width: 560px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.crossImage {
+    max-width: calc(100% - 20px);
+    height: 800;
+}
+
+.disabled{
+    pointer-events: none;
+}
+
+.enabled {
+    pointer-events: auto;
+    cursor: pointer;
+}

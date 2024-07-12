@@ -1,10 +1,15 @@
 import React from 'react'
-import Game from '../component/Game'
+// import Ticktactoa from '../tictackToa/components/Ticktactoa'
+import Navbar from '../homeComponents/Navbar'
+import Middlepart from '../homeComponents/Middlepart'
+
+// import Game from '../carGame/component/Game'
 
 function Home() {
   return (
     <div>
-      <Game/>
+      <Navbar/>
+     <Middlepart/>
     </div>
   )
 }

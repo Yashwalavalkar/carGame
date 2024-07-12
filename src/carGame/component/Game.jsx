@@ -3,7 +3,8 @@ import '../styles/Style.css';
 import '../scriptsFile/script.js'
 function Game() {
   return (
-    <div>
+    
+    <div className='gamecontainerImage'>
       <div className='row heading d-flex flex-wrap'>
         <div className='col-md-2'></div>
         <div className='col-md-6 d-flex header justify-content-center'>

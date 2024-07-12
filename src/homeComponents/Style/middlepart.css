@@ -1,0 +1,40 @@
+
+.gameBox{
+    min-height: 250px;
+    min-width: 250px;
+    max-height: 100px;   
+    margin:10px;
+}
+
+.gameContainerHome{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameContainerHome{
+   position:relative;
+   top:100px
+}
+
+.game1{
+    background-image: url('https://www.lifewire.com/thmb/XHzuQbQEoT8sBwl91xYF6UyWsrU=/1920x1080/filters:no_upscale():max_bytes(150000):strip_icc()/offlinecars-asphalt8-5bf393bb46e0fb002650eb20.jpg');
+    background-size: cover;
+    background-position: center;
+    width:10px;
+    
+}
+.game2{
+    background-image: url('../images/tictacktoe.jpg');
+    background-size: cover;
+    width:15px;
+    
+}
+.hoverImage:hover{
+    transform: scale(1.2);
+    margin: 10px;
+    transition: transform 1s;
+    animation: hovering 3s linear;
+    box-shadow: 1px 1px 15px 10px rgb(13, 217, 236);
+}
