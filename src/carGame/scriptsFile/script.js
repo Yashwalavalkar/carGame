@@ -1,6 +1,15 @@
 let score = 0;
 let cross = true;
 
+setTimeout(()=>{
+    let addO = document.querySelector('.obstacle');
+    let restart = document.querySelector(".header");
+    restart.innerHTML = "<h1><b>START</b></h1>";
+    setTimeout(()=>{
+        addO.classList.add("obstacleAni")
+    },700)
+},2000)
+
 document.onkeydown = function(e) {
     let car = document.querySelector(".car");
     if (!car) {

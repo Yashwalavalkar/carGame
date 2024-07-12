@@ -18,7 +18,7 @@ function Game() {
 
       <div className='gameContainer'>
         <div className='car'></div>
-        <div className='obstacle obstacleAni text-center text-white'><b>OBSTACLE</b></div>
+        <div className='obstacle  text-center text-white'><b>OBSTACLE</b></div>
       </div>
 
     </div>
