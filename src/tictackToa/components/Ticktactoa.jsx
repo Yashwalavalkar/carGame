@@ -41,17 +41,20 @@ import cross from '../Images/cross.gif';
             setCount(count + 1);
         }   
 
-        if(data[0] === data[1] && data[1] === data[2] && data[2] !== "" || data[0] === data[3] && data[3] === data[6] && data[6] !== "" || data[0] === data[4] && data[4] === data[8] && data[8] !== ""){
-            won(data[0])
-        }else if(data[3] === data[4] && data[4] === data[5] && data[5] !== "" || data[1] === data[4] && data[4] === data[7] && data[7] !== ""){
-            won(data[4])
-        }else if(data[6] === data[7] && data[7] === data[8] && data[8] !== ""){
-            won(data[6])
-        }else if(data[2] === data[5] && data[5] === data[8] && data[8] !== "" || data[2] === data[4] && data[4] === data[6] && data[6] !== ""){
-            won(data[2])
-        }
-
+        if ((data[0] === data[1] && data[1] === data[2] && data[2] !== "") || 
+        (data[0] === data[3] && data[3] === data[6] && data[6] !== "") || 
+        (data[0] === data[4] && data[4] === data[8] && data[8] !== "")) {
+        won(data[0]);
+    } else if ((data[3] === data[4] && data[4] === data[5] && data[5] !== "") || 
+               (data[1] === data[4] && data[4] === data[7] && data[7] !== "")) {
+        won(data[4]);
+    } else if (data[6] === data[7] && data[7] === data[8] && data[8] !== "") {
+        won(data[6]);
+    } else if ((data[2] === data[5] && data[5] === data[8] && data[8] !== "") || 
+               (data[2] === data[4] && data[4] === data[6] && data[6] !== "")) {
+        won(data[2]);
     }
+};
     function won(data){
         let title = document.querySelector('.title')
         if(data === "x"){
@@ -70,6 +73,7 @@ import cross from '../Images/cross.gif';
         box_array.map((e)=>{
             e.current.innerHTML = "";
             e.current.classList.add("enabled")
+            return null;
         })
     }
   return (
