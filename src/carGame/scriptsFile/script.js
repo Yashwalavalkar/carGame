@@ -58,8 +58,19 @@ setInterval(() => {
         obstacle.classList.remove("obstacleAni");
         let data = document.querySelector(".scoreCount");
         data.innerHTML = "Reload to play again";
-        let restart = document.querySelector(".header");
-        restart.innerHTML = "<h1><b>RELOAD TO START AGAIN</b></h1>";
+
+        setTimeout(()=>{
+            let restart = document.querySelector(".header");
+            restart.innerHTML = "<h1><b>Starting Game Again</b></h1>";
+            let data = document.querySelector(".scoreCount");
+        data.innerHTML = "0";
+            setTimeout(()=>{
+                score = 0
+                let addO = document.querySelector('.obstacle');
+                addO.classList.add("obstacleAni")
+            },2000)
+
+        },1000)
     } else if (cross && offsetX < 200) {
         score += 1;
         if (score === 5) {
@@ -75,6 +86,7 @@ setInterval(() => {
         }, 1000);
     }
 }, 10);
+
 
 function updateScore(score) {
     let change = document.querySelector(".scoreCount");
