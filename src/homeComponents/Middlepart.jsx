@@ -13,7 +13,7 @@ function Middlepart() {
           <div className="className gameBox game2 img-fluid hoverImage"></div>
         </Link>
         <Link to='/magicgame'>
-          <div className="className gameBox game3 img-fluid hoverImage"><img src={magic}></img></div>
+          <div className="className gameBox game3 img-fluid hoverImage"><img src={magic} alt="cardGame"></img></div>
         </Link>
       </div>
     </div>
