@@ -4,6 +4,7 @@ import Home from './screen/Home';
 import About from './homeComponents/About';
 import Ticktactoa from '../src/tictackToa/components/Ticktactoa'
 import Cargame from '../src/carGame/component/Game'
+import Magicgame from './magicGame/components/Magicgame';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/about' element={<About/>}></Route>
           <Route path="/tictac" element={<Ticktactoa/>} />
           <Route path='/cargame' element={<Cargame/>}></Route>
+          <Route path='/magicgame' element={<Magicgame/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
